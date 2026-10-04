@@ -28,11 +28,16 @@ public class aiMovementScript : MonoBehaviour
     {
         if(agent.remainingDistance <= .5f)
         {
+            /*
             if(targetList.Count > 0)
             {
                 agent.destination = targetList[0];
                 targetList.Remove(targetList[0]);
-            }    
+            } 
+            */
+
+            agent.destination = transform.position + Random.insideUnitSphere * walkRange;
+
         }
     }
 }

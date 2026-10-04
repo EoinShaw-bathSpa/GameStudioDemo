@@ -24,6 +24,8 @@ public class LimbMovement : MonoBehaviour
 
     public NavMeshAgent controller;
 
+    public Vector3 footPos;
+
     private void Start()
     {
         targetLocation = targetObject.position;
